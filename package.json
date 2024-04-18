@@ -1,0 +1,15 @@
+{
+  "name": "coshmup-book",
+  "version": "0.0.1",
+  "description": "Design and Programming of Coshmup",
+  "scripts": {
+    "serve": "honkit serve",
+    "build": "honkit build . docs"
+  },
+  "keywords": [],
+  "author": "Cosmoose Gang",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "honkit": "^5.1.4"
+  }
+}

@@ -1,0 +1,7 @@
+.gitignore
+.bookignore
+package.json
+package-lock.json
+.vscode/
+.idea/
+build
