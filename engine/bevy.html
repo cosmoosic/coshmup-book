@@ -1,0 +1,408 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Bevy · Coshmup Design Document</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.5">
+        <meta name="author" content="Cosmoose Gang">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="bulletml.html" />
+    
+    
+    <link rel="prev" href="overview.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                    Engine
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="bevy.html">
+            
+                <a href="bevy.html">
+            
+                    
+                    Bevy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="bulletml.html">
+            
+                <a href="bulletml.html">
+            
+                    
+                    BulletML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../gameplay/overview.html">
+            
+                <a href="../gameplay/overview.html">
+            
+                    
+                    Gameplay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../aesthetic/overview.html">
+            
+                <a href="../aesthetic/overview.html">
+            
+                    
+                    Aesthetic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../music/overview.html">
+            
+                <a href="../music/overview.html">
+            
+                    
+                    Music
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../references.html">
+            
+                <a href="../references.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Bevy</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="bevy">Bevy</h2>
+<p>Bevy is a game engine using the ECS (Entity/Component/System) architecture.
+It it written in rust.</p>
+<h3 id="main-links">Main links</h3>
+<ul>
+<li><a href="https://github.com/bevyengine/bevy" target="_blank">https://github.com/bevyengine/bevy</a></li>
+<li><a href="https://bevyengine.org/" target="_blank">https://bevyengine.org/</a></li>
+<li><a href="https://github.com/Anshorei/awesome-bevy" target="_blank">https://github.com/Anshorei/awesome-bevy</a></li>
+<li><a href="https://bevy-cheatbook.github.io/platforms.html" target="_blank">https://bevy-cheatbook.github.io/platforms.html</a></li>
+</ul>
+<h3 id="2d-project-template">2D Project template</h3>
+<ul>
+<li><a href="https://github.com/TheBevyFlock/bevy_new_2d" target="_blank">https://github.com/TheBevyFlock/bevy_new_2d</a></li>
+<li><a href="https://www.youtube.com/watch?v=ESBRyXClaYc" target="_blank">https://www.youtube.com/watch?v=ESBRyXClaYc</a></li>
+</ul>
+<h3 id="shmup">Shmup</h3>
+<p>Tutorial:
+<a href="https://www.youtube.com/watch?v=p8d8TKo59LU" target="_blank">https://www.youtube.com/watch?v=p8d8TKo59LU</a></p>
+<p>Existing examples:</p>
+<ul>
+<li><a href="https://github.com/djeedai/super-kaizen-overloaded" target="_blank">https://github.com/djeedai/super-kaizen-overloaded</a></li>
+<li><a href="https://github.com/bones-ai/bevy-2d-shooter" target="_blank">https://github.com/bones-ai/bevy-2d-shooter</a></li>
+<li><a href="https://github.com/randommm/bevy-shoot-em-up" target="_blank">https://github.com/randommm/bevy-shoot-em-up</a></li>
+</ul>
+<h3 id="other-tutorials">Other tutorials</h3>
+<p>Introduction
+<a href="https://www.youtube.com/watch?v=HGhQuebcHL4" target="_blank">https://www.youtube.com/watch?v=HGhQuebcHL4</a></p>
+<p>10 minutes space invader
+<a href="https://www.youtube.com/watch?v=PDa88vDY7O0" target="_blank">https://www.youtube.com/watch?v=PDa88vDY7O0</a></p>
+<p>Engine comparison (Unity, Godot)
+<a href="https://www.youtube.com/watch?v=PWWnVsuGRS4" target="_blank">https://www.youtube.com/watch?v=PWWnVsuGRS4</a></p>
+<h3 id="game-jams">Game jams</h3>
+<p>Next one (unofficial): <a href="https://itch.io/jam/bevy-spooky-jam" target="_blank">https://itch.io/jam/bevy-spooky-jam</a></p>
+<p>Past:</p>
+<ul>
+<li><a href="https://itch.io/jam/bevy-jam-5" target="_blank">https://itch.io/jam/bevy-jam-5</a></li>
+<li><a href="https://itch.io/jam/bevy-jam-4" target="_blank">https://itch.io/jam/bevy-jam-4</a></li>
+<li><a href="https://itch.io/jam/bevy-jam-3" target="_blank">https://itch.io/jam/bevy-jam-3</a></li>
+<li><a href="https://itch.io/jam/bevy-jam-2" target="_blank">https://itch.io/jam/bevy-jam-2</a></li>
+<li><a href="https://itch.io/jam/bevy-jam-1" target="_blank">https://itch.io/jam/bevy-jam-1</a></li>
+</ul>
+<h3 id="news">News</h3>
+<p><a href="https://thisweekinbevy.com/" target="_blank">https://thisweekinbevy.com/</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="overview.html" class="navigation navigation-prev " aria-label="Previous page: Engine">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="bulletml.html" class="navigation navigation-next " aria-label="Next page: BulletML">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bevy","level":"1.2.1","depth":2,"next":{"title":"BulletML","level":"1.2.2","depth":2,"path":"engine/bulletml.md","ref":"engine/bulletml.md","articles":[]},"previous":{"title":"Engine","level":"1.2","depth":1,"path":"engine/overview.md","ref":"engine/overview.md","articles":[{"title":"Bevy","level":"1.2.1","depth":2,"path":"engine/bevy.md","ref":"engine/bevy.md","articles":[]},{"title":"BulletML","level":"1.2.2","depth":2,"path":"engine/bulletml.md","ref":"engine/bulletml.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Cosmoose Gang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Coshmup Design Document","gitbook":"*","description":"Coshmup Design Document"},"file":{"path":"engine/bevy.md","mtime":"2024-10-11T18:41:38.936Z","type":"markdown"},"gitbook":{"version":"5.1.5","time":"2024-10-11T18:41:52.657Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

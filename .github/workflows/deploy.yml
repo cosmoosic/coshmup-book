@@ -1,0 +1,34 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npx honkit build . docs
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.email "wooliondrawz@gmail.com"
+          git config --global user.name "woolion"
+          git checkout --orphan deploy
+          git --work-tree docs add --all
+          git --work-tree docs commit -m "Deploy to GitHub Pages"
+          git push origin HEAD:deploy --force
