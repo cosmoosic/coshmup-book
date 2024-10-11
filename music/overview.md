@@ -5,6 +5,14 @@
 SFX sounds can be 'quantized' (fall onto the nearest beat-aligned time interval) to flow better with the game music.
 The most famous example of game using this technique is certainly Rez, [as demonstrated in this longplay](https://www.youtube.com/watch?v=cnBR1CMWkhY).
 
+### Adaptive music
+
+Introduce dynamic music adaptation using layers or alsmost seamless transitions, as in Hades.
+These two approaches are named vertical and horizontal.
+A video showcasing numerous examples, mainly from Nintendo games: [Adaptive Soundtracks in Games](https://www.youtube.com/watch?v=b0gvM4q2hdI).
+This one showcase a basic approach with simple mixer, [Dynamic Game Music Isn't THAT hard](https://www.youtube.com/watch?v=Z-FNa6ZSsOo). 
+Another channel that treats that subject is [Scruffy](https://www.youtube.com/@ScruffyMusic/videos).
+
 ### References
 
 Excellent reference soundtracks:
